@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2" ng-repeat="post in posts">
+            <div>{{ post.story }}</div>
+            <div><h3>{{ post.description }}</h3></div>
+            <div><img src="{{ post.picture }}" /></div>
+            <div ><p>{{ post.message }}</p></div>
+
+            <div>{{ post.created_time }}<div>
+            <div>
+                comments:
+                <span>
+                    <ul ng-repeat="comment in post.comments.data">
+                        <li><strong>{{ comment.from.name }}</strong>&nbsp;: {{ comment.message }}</li>
+                    </ul>
+                </span>
+            </div>
+            <div>
+                likes: <span ng-repeat="like in post.likes.data">&nbsp;{{ like.name }},</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Facebook stats</h3>
+                        <div>
+                            <pie-chart data="posts"></pie-chart>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-8" infinite-scroll="fbPosts.loadMore()" infinite-scroll-disabled="fbPosts.busy" infinite-scroll-distance="1">
+            <div fbposts-list posts="posts", paging="paging"></div>
+        </div>
+    </div>
+</div>

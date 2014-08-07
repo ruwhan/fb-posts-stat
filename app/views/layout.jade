@@ -1,0 +1,33 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    block css
+      link(rel='stylesheet', href='css/style.css')
+      link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+      link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap-theme.min.css')
+    block scripts
+      script(src='http://localhost:35729/livereload.js')
+      script(src="bower_components/jquery/dist/jquery.min.js")
+      script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+      script(src="bower_components/angular/angular.min.js")
+      script(src="bower_components/angular-resource/angular-resource.min.js")
+      script(src="bower_components/angular-route/angular-route.min.js")
+      script(src="bower_components/highcharts/highcharts.js")
+      // script(src="bower_components/d3/d3.min.js")
+      // script(src="bower_components/angular-ui-utils/ui-utils.min.js")
+      script(src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js")
+
+    block additionalScripts
+      script(src="js/application.js")
+      script(src="js/controllers/fbPostsControllers.js")
+      script(src="js/directives/fbPostsDirectives.js")
+      script(src="js/directives/highchartsDirectives.js")
+      script(src="js/services/fbPostsServices.js")
+      script(src="js/services/highchartsServices.js")
+      
+  body(ng-app="fbPosts")
+    block content
+    block js

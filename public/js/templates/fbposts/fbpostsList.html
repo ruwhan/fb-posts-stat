@@ -1,0 +1,11 @@
+
+    <div ng-repeat="post in posts">
+        <div style="margin-top: 32px; margin-bottom: 32px;">
+            <strong>{{ post.name }}</strong>
+            <p>{{ post.message }}</p>
+            <p>{{ post.description }}</p>
+            <a href="#/details/{{ post.id }}">details</a><br />
+            <small><em>{{ post.status_type }} - {{ post.type }}<br />
+            {{ post.created_time }}<br /></em></small>
+        </div>
+    </div>

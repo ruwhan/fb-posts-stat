@@ -35,8 +35,9 @@ To Do:
 ------
 * Add 'from' and 'to' date text/title in the chart
 * Add monthly statistic using Highcarts's stacked barchart
-* realtime update
-* post to Facebook from this app
+* Realtime update
+* Post to Facebook from this app
+* Minification
 * etc (not sure for now :D )
 
 [generator-express]:https://github.com/petecoop/generator-express

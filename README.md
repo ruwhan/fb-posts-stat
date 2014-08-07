@@ -1,7 +1,7 @@
 fb-posts-statistics
 ===================
 
-Basic dashboard app for your facebook posts statistics, built using my own MEAN stack (using [generator-express]), [Highcharts] &amp; [ng-infiniteScroll] (Angular) plugin.
+Basic dashboard app for your facebook posts statistics, built using my own MEAN stack (using [generator-express]), [Highcharts] &amp; [ng-infiniteScroll] plugin.
 
 MongoDB only used to store necessary data from Facebook.
 
